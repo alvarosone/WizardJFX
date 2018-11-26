@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+   <children>
+      <AnchorPane id="pane1" fx:id="pane1" layoutX="133.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ff66cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="194.0" layoutY="77.0" prefHeight="31.0" prefWidth="108.0" text="Zelda" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="93.0" prefWidth="179.0" text="La Princesa Zelda, proveniente del reina de Hyrule, está preparada para mandar a sus rivales volando con sus potentes poderes mágicos" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <ImageView fitHeight="269.0" fitWidth="247.0" layoutX="126.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Zelda_SSBU.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="pane2" fx:id="pane2" layoutX="152.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #80ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="161.0" layoutY="77.0" prefHeight="31.0" prefWidth="205.0" text="Estela y Destello" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="93.0" prefWidth="179.0" text="La Princesa Estela, llega desde su Planetario dispuesta a dar mamporros con la ayuda de su varita y de su fiel compañero, Destello." textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <ImageView fitHeight="310.0" fitWidth="269.0" layoutX="129.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Rosalina_SSBU.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="pane3" fx:id="pane3" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #66ffc2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="196.0" layoutY="77.0" text="Palutena" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="125.0" prefHeight="68.0" prefWidth="179.0" text="La Diosa Palutena, Diosa de la Luz y gobernadora de la Tierra de los Ángeles, viene preparada con un gran arsenal de habilidades." textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <ImageView fitHeight="293.0" fitWidth="291.0" layoutX="119.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Palutena_SSBU.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="43.0" layoutY="508.0" onAction="#backAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: 000000; -fx-background-radius: 50;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="392.0" layoutY="508.0" onAction="#nextAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: 000000; -fx-background-radius: 50;" text="&gt;" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="countLabel" alignment="CENTER" layoutX="114.0" layoutY="535.0" prefHeight="17.0" prefWidth="269.0" text="1/3" textAlignment="CENTER" textFill="WHITE" />
+   </children>
+</AnchorPane>
